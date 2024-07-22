@@ -35,8 +35,10 @@ final class WeatherViewController: UIViewController {
         cloudView.stopCloudAnimation()
         cloudView.alpha = 0
         guard let weather else { return }
-        setGradientColors(weather: weather)
-        setupWeather(weather: weather)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
+            self?.setGradientColors(weather: weather)
+            self?.setupWeather(weather: weather)
+        }
     }
     
     private func setupViews() {

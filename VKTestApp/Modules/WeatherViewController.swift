@@ -14,7 +14,7 @@ final class WeatherViewController: UIViewController {
     private let sunView = SunView()
     private var cloudView = CloudView()
     
-    var weather = Weather.allCases.randomElement()
+    private let weather = Weather.allCases.randomElement()
     
     override func viewDidLoad() {
         super.viewDidLoad()

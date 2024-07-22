@@ -1,0 +1,5 @@
+"fog" = "Fog";
+"rain" = "Rain";
+"lightning" = "Thunderstorm";
+"sun" = "Clear";
+"cloudy" = "Cloudy";
